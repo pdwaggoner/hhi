@@ -8,8 +8,8 @@ x <- data.frame(a,b)
 hhi <- function(x, s){
   d <- x[ ,s]
   for(i in 1:length(d)) {
-    z[i] <- d[i]^2
-    hhi <- sum(z)
+    f[i] <- d[i]^2
+    hhi <- sum(f)
   }
   return(hhi) 
 }

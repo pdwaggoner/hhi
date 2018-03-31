@@ -16,6 +16,29 @@ hhi <- function(x, s){
 
 ## Next, include time function
 
-## Then, measures of uncertainty
+## Then, measures of uncertainty, e.g.,
+
+mu <- mean(s) # s = market share/vector used in hhi above
+sigma <- sd(s)
+se <- sigma/sqrt(4)
+upper = mu + 1.96*se
+lower = mu - 1.96*se
+
+zs <- function(m, mu, sigma) {
+  (mean(m)-mu)/(sigma/sqrt(4)) 
+  }
+
+z <- numeric(length(d))
+for(i in 1:length(d)) {
+  z[i] <- zs(m[i], mu, sigma)
+  }
+
+for(i in 1:length(d)) {
+  upper[i] <- m[i] + 1.96*se
+  }
+
+for(i in 1:length(d)) {
+  lower[i] <- m[i] - 1.96*se
+  }
 
 ## Then, plotting and other diagnostic functions

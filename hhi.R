@@ -17,7 +17,6 @@ hhi <- function(x, s){
 ## Next, include time function
 
 ## Then, measures of uncertainty, e.g.,
-
 mu <- mean(s) # s = market share/vector used in hhi above
 sigma <- sd(s)
 se <- sigma/sqrt(4)

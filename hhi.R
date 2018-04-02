@@ -1,6 +1,6 @@
 # Basic intuition
 
-# First, create some data and use the function (should equal 29: ((2^2) + (3^2) + (4^2)))
+# First, create some data and use the function
 a <- c(1,2,3)
 b <- c(2,3,4)
 x <- data.frame(a,b)
@@ -8,36 +8,35 @@ x <- data.frame(a,b)
 hhi <- function(x, s){
   d <- x[ ,s]
   for(i in 1:length(d)) {
-    f[i] <- d[i]^2
-    hhi <- sum(f)
+    d[i] <- d[i]^2
+    hhi <- sum(d)
   }
-  return(hhi) 
+  return(hhi)
 }
 
-## Next, include time function
+# Now take it for a quick spin 
+hhi(x, "b") # should equal 29 (corroborate manually with (2^2)+(3^2)+(4^2))
 
-## Then, measures of uncertainty, e.g.,
-mu <- mean(s) # s = market share/vector used in hhi above
-sigma <- sd(s)
-se <- sigma/sqrt(4)
-upper = mu + 1.96*se
-lower = mu - 1.96*se
+## Then, quick plotting function with an example
+plot.hhi <- function(x,t,h){
 
-zs <- function(m, mu, sigma) {
-  (mean(m)-mu)/(sigma/sqrt(4)) 
-  }
+  t <- x[ ,t]
+  h <- x[ ,h]
 
-z <- numeric(length(d))
-for(i in 1:length(d)) {
-  z[i] <- zs(m[i], mu, sigma)
-  }
+  hhi.plot <- ggplot(x, aes(t, h)) +
+    geom_point() +
+    geom_line() +
+    xlab("Time") +
+    ylab("Herfindahl-Hirschman Index") +
+    ggtitle("Herfindahl-Hirschman Index Over Time") +
+    theme_bw() +
+    theme(plot.title = element_text(hjust = 0.5))
 
-for(i in 1:length(d)) {
-  upper[i] <- m[i] + 1.96*se
-  }
+  return(hhi.plot)
 
-for(i in 1:length(d)) {
-  lower[i] <- m[i] - 1.96*se
-  }
+}
 
-## Then, plotting and other diagnostic functions
+hhi <- c(45,60,50,100,94,15,88,200,215,68,47,62,52,102,96,17,90,202,217,70)
+year <- c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009)
+data <- data.frame(hhi, year)
+plot.hhi(data, "year", "hhi")

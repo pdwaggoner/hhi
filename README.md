@@ -30,7 +30,7 @@ hhi(x, "b")
 
 # Plot a time series of fictitious HHI values
 hhi <- c(45,60,50,100,94,15,88,200,215,68,47,62,52,102,96,17,90,202,217,70) # create a vector of HHI values by year
-year <-c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009) # create a vector of corresponding years
+year <- c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009) # create a vector of corresponding years
 data <- data.frame(hhi, year) # combine into a data frame
 
 # Now plot the HHI by year over time using the "plot_hhi" command
@@ -40,7 +40,7 @@ plot_hhi(data, "year", "hhi")
 
 ## How do I get `hhi `?
 
-Though the full package will soon be released on CRAN, you can access the pre-released version (1.0.0) here at my `hhi` [GitHub](https://github.com/pdwaggoner/hhi) repository. Check back for updates and the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
+Though the full package will soon be released on CRAN, you can access the pre-released version (1.0.0) here at my `hhi` [repository](https://github.com/pdwaggoner/hhi). Check back for updates and the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
 
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.

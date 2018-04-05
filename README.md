@@ -16,7 +16,7 @@ Below are examples of the pair of functions in the package, including `hhi` to g
 
 ```{r }
 
-# Once released at CRAN, download package from there; until then, access the working R script in this repo
+# Download from CRAN
 install.packages("hhi")
 library(hhi)
 
@@ -40,7 +40,7 @@ plot_hhi(data, "year", "hhi")
 
 ## How do I get `hhi `?
 
-Though the full package will soon be released on CRAN, you can access the pre-released version (1.0.0) here at my `hhi` [repository](https://github.com/pdwaggoner/hhi). Check back for updates and the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
+You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi). If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
 
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.

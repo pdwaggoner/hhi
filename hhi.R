@@ -1,4 +1,4 @@
-## In Roxygen code -- update accordingly
+## In Roxygen syntax -- update accordingly
 
 #' Calculates the Herfindahl-Hirschman Index
 #'

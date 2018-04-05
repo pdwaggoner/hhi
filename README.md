@@ -2,8 +2,6 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/hhi)](http://cran.r-project.org/package=hhi)
 ![Downloads](http://cranlogs.r-pkg.org/badges/hhi)
 
-# Calculate and Visualize the Herfindahl-Hirschman Index
-
 ## Why should I use `hhi`?
 
 The Herfindahl-Hirschman Index (HHI) is a widely used measure of concentration in a variety of fields including, business, economics, political science, finance, and others. Though intuitively simple to calculate (summed squared market shares of firms/actors in a single space), calculation of HHI can get onerous, especially as the number of firms/actors increases.

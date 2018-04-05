@@ -1,11 +1,6 @@
 # `hhi` An R Package to Calculate and Visualize the Herfindahl-Hirschman Index
 
 ---
-title: "README.md"
-author: "Philip D. Waggoner"
-date: "4/3/2018"
-output: html_document
----
 
 # Calculate and Visualize the Herfindahl-Hirschman Index
 

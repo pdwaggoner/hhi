@@ -1,6 +1,6 @@
 # `hhi` An R Package to Calculate and Visualize the Herfindahl-Hirschman Index
-
----
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/hhi)](http://cran.r-project.org/package=hhi)
+![Downloads](http://cranlogs.r-pkg.org/badges/hhi)
 
 # Calculate and Visualize the Herfindahl-Hirschman Index
 

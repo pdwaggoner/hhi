@@ -1,5 +1,14 @@
 # `hhi` An R Package to Calculate and Visualize the Herfindahl-Hirschman Index
 
+---
+title: "README.md"
+author: "Philip D. Waggoner"
+date: "4/3/2018"
+output: html_document
+---
+
+# Calculate and Visualize the Herfindahl-Hirschman Index
+
 ## Why should I use `hhi`?
 
 The Herfindahl-Hirschman Index (HHI) is a widely used measure of concentration in a variety of fields including, business, economics, political science, finance, and others. Though intuitively simple to calculate (summed squared market shares of firms/actors in a single space), calculation of HHI can get onerous, especially as the number of firms/actors increases.
@@ -16,7 +25,6 @@ Below are examples of the pair of functions in the package, including `hhi` to g
 
 ```{r }
 
-# Download from CRAN
 install.packages("hhi")
 library(hhi)
 
@@ -29,8 +37,10 @@ x <- data.frame(a,b) # create data frame
 hhi(x, "b")
 
 # Plot a time series of fictitious HHI values
-hhi <- c(45,60,50,100,94,15,88,200,215,68,47,62,52,102,96,17,90,202,217,70) # create a vector of HHI values by year
-year <- c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009) # create a vector of corresponding years
+hhi <- c(45,60,50,100,94,15,88,200,215,68,
+47,62,52,102,96,17,90,202,217,70) # create a vector of HHI values by year
+year <-c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,
+2000,2001,2002,2003,2004,2005,2006,2007,2008,2009) # create a vector of corresponding years
 data <- data.frame(hhi, year) # combine into a data frame
 
 # Now plot the HHI by year over time using the "plot_hhi" command

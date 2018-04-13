@@ -1,4 +1,5 @@
 ## In Roxygen syntax -- update accordingly
+# Many thanks to Josh Grode (Encompass Insurance) for pointing out some defensive debugging needs in the function
 
 #' Calculates the Herfindahl-Hirschman Index
 #'
@@ -13,16 +14,27 @@
 #'@references Herfindahl, Orris Clemens. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 #'@references Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
 #'@examples
-#' a <- c(1,2,3) # arbitrary firm id
-#' b <- c(2,3,4) # market share of each firm
+#' a <- c(1,2,3,4) # arbitrary firm id
+#' b <- c(20,30,40,10) # market share of each firm
 #' x <- data.frame(a,b) # create data frame
 #' hhi(x, "b") # calculate market concentration based on firms' share sizes
 #'@export
 hhi <- function(x, s){
-  shares <- sum(x[ ,s])
-  if(shares < 100) warning('shares do not sum to 100')
+  if(!is.data.frame(x)) {
+    stop('"x" must be data frame\n',
+         'You have provided an object of class: ', class(x)[1])
+  }
+  shares <- try(sum(x[ ,s]))
+  if(shares < 100 | shares > 100) warning('shares, "s", do not sum to 100')
   d <- x[ ,s]
+  if(!is.numeric(d)) {
+    stop('"s" must be numeric vector\n',
+         'You have provided an object of class: ', class(d)[1])
+  }
   for(i in 1:length(d)) {
+    if(d[i] < 0){
+      stop('vector "s" must contain only positive values')
+    }
     d[i] <- d[i]^2
     hhi <- sum(d)
   }

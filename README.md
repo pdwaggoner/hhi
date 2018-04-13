@@ -22,8 +22,8 @@ install.packages("hhi")
 library(hhi)
 
 # Create some simple data
-a <- c(1,2,3) # arbitrary firm id
-b <- c(2,3,4) # market share of each firm
+a <- c(1,2,3,4) # arbitrary firm id
+b <- c(20,30,40,10) # market share of each firm (shares should total 100%)
 x <- data.frame(a,b) # create data frame
 
 # Call the command, hhi, to calculate the HHI (concentration) based on the vector of market share values in object "b" in the data frame "x"

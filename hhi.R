@@ -19,6 +19,8 @@
 #' hhi(x, "b") # calculate market concentration based on firms' share sizes
 #'@export
 hhi <- function(x, s){
+  shares <- sum(x[ ,s])
+  if(shares < 100) warning('shares do not sum to 100')
   d <- x[ ,s]
   for(i in 1:length(d)) {
     d[i] <- d[i]^2

@@ -1,10 +1,3 @@
----
-title: "NEWS.md"
-author: "Philip D. Waggoner"
-date: "4/13/2018"
-output: html_document
----
-
 # `hhi` 1.1.0
 ## Calculate and Visualize the Herfindahl-Hirschman Index
 

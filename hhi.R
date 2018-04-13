@@ -1,5 +1,5 @@
 ## In Roxygen syntax -- update accordingly
-# Many thanks to Josh Grode (Encompass Insurance) for pointing out some defensive debugging needs in the function
+# Many thanks to Josh Grode (Encompass Insurance) for pointing out some defensive debugging needs in the function, as well as updating the example data
 
 #' Calculates the Herfindahl-Hirschman Index
 #'

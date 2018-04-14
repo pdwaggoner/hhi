@@ -47,11 +47,11 @@ You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi)
 
 Please cite the package using the TeX entry:
 
-@Manual{,
-    title = {hhi: Calculate and Visualize the Herfindahl-Hirschman Index},
-    author = {Philip D. Waggoner},
-    year = {2018},
-    note = {R package version 1.1.0}
+@Manual{Waggoner2018hhi,<br/>
+    title = {hhi: Calculate and Visualize the Herfindahl-Hirschman Index},<br/>
+    author = {Philip D. Waggoner},<br/>
+    year = {2018},<br/>
+    note = {R package version 1.1.0}<br/>
   }
 
 ## References

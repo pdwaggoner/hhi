@@ -45,6 +45,15 @@ plot_hhi(data, "year", "hhi")
 
 You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi). If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
 
+Please cite the package using the TeX entry:
+
+@Manual{,
+    title = {hhi: Calculate and Visualize the Herfindahl-Hirschman Index},
+    author = {Philip D. Waggoner},
+    year = {2018},
+    note = {R package version 1.1.0}
+  }
+
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 2. Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berkeley, CA: University of California Press.

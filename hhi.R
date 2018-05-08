@@ -1,6 +1,3 @@
-## In Roxygen syntax -- update accordingly
-# Many thanks to Josh Grode (Encompass Insurance) for pointing out some defensive debugging needs in the function, as well as updating the example data
-
 #' Calculates the Herfindahl-Hirschman Index
 #'
 #' Computes the Herfindahl-Hirschman Index of a market/space, which is a measure of concentration, based on the share size of all individual firms/actors

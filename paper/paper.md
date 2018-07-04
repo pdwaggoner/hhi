@@ -9,7 +9,10 @@ tags:
 authors:
   - name: Philip D. Waggoner
     orcid: 0000-0002-7825-7573
-    affiliation: Department of Government, College of William & Mary
+    affiliation: 1
+affiliations:
+ - name: Department of Government, College of William & Mary
+   index: 1
 date: 28 June 2018
 bibliography: paper.bib
 ---

@@ -1,6 +1,7 @@
 # `hhi` An R Package to Calculate and Visualize the Herfindahl-Hirschman Index
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/hhi)](http://cran.r-project.org/package=hhi)
 [![total](http://cranlogs.r-pkg.org/badges/grand-total/hhi)](http://cranlogs.r-pkg.org/)
+[![Travis-CI Build Status](https://travis-ci.org/pdwaggoner/hhi.svg?branch=master)](https://travis-ci.org/pdwaggoner/hhi)
 
 ## Why should I use `hhi`?
 

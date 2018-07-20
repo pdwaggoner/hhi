@@ -100,7 +100,7 @@ full.plot <- ggplot(hhi.data, aes(year, hhi, colour = Country)) +
   geom_line() +
   xlab("Time") +
   ylab("Herfindahl-Hirschman Index Scores") +
-  ggtitle("Comparing Herfindahl-Hirschman Index Over Time\nUnited States and China") +
+  ggtitle("Comparing HHI Over Time, United States and China") +
   theme_bw()
 full.plot + theme(plot.title = element_text(hjust = 0.5))
 

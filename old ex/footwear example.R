@@ -2,7 +2,7 @@
 install.packages("hhi")
 library(hhi)
 
-# Next, read in Data: .txt file of US Men's Footwear Company Market Shares, 2012-2017 (Source: © Euromonitor International)
+# Next, read in Data: Footwear .txt from 2012 to 2017 (Source: © Euromonitor International)
 footwear <- read.table(".../footwear.txt") # for the .txt file, download "footwear.txt"
 
 # Now, use the "hhi" command to calculate HHI for years 2016 and then 2017

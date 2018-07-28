@@ -5,11 +5,11 @@ library(hhi)
 # Next, read in Data: Footwear .txt from 2012 to 2017 (Source: © Euromonitor International)
 footwear <- read.table(".../footwear.txt") # for the .txt file, download "footwear.txt"
 
-# Now, use the "hhi" command to calculate HHI for years 2016 and then 2017
+# Now, calculate HHI for years 2016 and then 2017
 hhi(footwear, "ms.2016")
 hhi(footwear, "ms.2017")
 
-# Finally, to visualize HHI over time, calculate and store HHI for each year in the data set (2012-2017)
+# Now, calculate and store HHI for each year in the data set (2012-2017)
 hhi.12 <- hhi(footwear, "ms.2012")
 hhi.13 <- hhi(footwear, "ms.2013")
 hhi.14 <- hhi(footwear, "ms.2014")

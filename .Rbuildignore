@@ -1,6 +1,6 @@
 .github/*
 ^LICENSE\.txt$
-^hhi\_manual\.pdf$
+^hhi_manual\.pdf$
 ^microwaves\.csv$
 ^paper\.bib$
 ^paper\.md$

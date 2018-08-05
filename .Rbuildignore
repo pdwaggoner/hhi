@@ -1,0 +1,8 @@
+.github/*
+^LICENSE\.txt$
+^hhi\_manual\.pdf$
+^microwaves\.csv$
+^paper\.bib$
+^paper\.md$
+^plot1\.png$
+^plot2\.png$

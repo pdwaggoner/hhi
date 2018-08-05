@@ -35,12 +35,12 @@ microwaves <- read.csv(".../microwaves.csv") # Specify file path where .csv file
 
 # Next, store all HHI scores for each year in the data
 # Note, for several years a warning message notes shares don't sum to 100 due to rounding
-usa.12 <- hhi(usa, "ms.2012")
-usa.13 <- hhi(usa, "ms.2013")
-usa.14 <- hhi(usa, "ms.2014")
-usa.15 <- hhi(usa, "ms.2015")
-usa.16 <- hhi(usa, "ms.2016")
-usa.17 <- hhi(usa, "ms.2017")
+usa.12 <- hhi(usa, "ms.2012")<br/>
+usa.13 <- hhi(usa, "ms.2013")<br/>
+usa.14 <- hhi(usa, "ms.2014")<br/>
+usa.15 <- hhi(usa, "ms.2015")<br/>
+usa.16 <- hhi(usa, "ms.2016")<br/>
+usa.17 <- hhi(usa, "ms.2017")<br/>
 
 # Create a few objects to see fluctuation in the U.S. HHI from 2012-2017
 usa.hhi <- rbind(usa.12, usa.13, usa.14, usa.15, usa.16, usa.17)
@@ -114,6 +114,6 @@ The `hhi` package can be downloaded and installed either directly from CRAN or t
 
 # Acknowledgements
 
-I thank Josh Grode for some value suggestions on defensive coding strategies, many of which were included in the most recent release of the package.
+I thank Josh Grode for some valuable defensive code suggestions, many of which were included in the most recent release. I also thank Thomas Leeper and Chris Skovron for the excellent comments, feedback, and review.  
 
 # References

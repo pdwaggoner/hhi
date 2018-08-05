@@ -114,6 +114,6 @@ The `hhi` package can be downloaded and installed either directly from CRAN or t
 
 # Acknowledgements
 
-I thank Josh Grode for some valuable defensive code suggestions, many of which were included in the most recent release. I also thank Thomas Leeper and Chris Skovron for the excellent comments, feedback, and review.  
+I thank Thomas Leeper and Chris Skovron for the excellent comments, feedback, and review. I also thank Josh Grode for some valuable defensive code suggestions, many of which were included in the most recent release. 
 
 # References

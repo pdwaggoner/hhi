@@ -1,7 +1,5 @@
 context("hhi tests")
 
-library(hhi)
-
 test_that("function operates properly", {
   data(x)
   d <- x[ ,s]

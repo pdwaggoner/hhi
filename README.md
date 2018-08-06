@@ -49,7 +49,7 @@ You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi)
 
 Please cite the JOSS paper associated with the package using the TeX entry:
 
-@article{hhi2018,
+@article{hhi2018,<br/>
     title = {The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores},<br/>
     author = {Philip D. Waggoner},<br/>
     journal={Journal of Open Source Software},<br/>

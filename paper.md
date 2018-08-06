@@ -25,8 +25,7 @@ The R package [@team:2000] hhi is dedicated to filling this gap, by offering an 
 
 To see the `hhi` package in action, consider a brief tutorial using real market data on microwave company market shares in the United States and China [@euro]. The value of this exercise is twofold: first, to demonstrate use of the package with real economic data, and second, to demonstrate the value of the package in examining a substantive social science question on market competition between two large global producers (the U.S. and China).
 
-```{r }
-
+```R
 install.packages("hhi")
 library(hhi)
 
@@ -73,7 +72,6 @@ grid.newpage()
 pushViewport(viewport(layout = grid.layout(1, 2))) # 1 r, 2 c
 print(usa.plot, vp = vplayout(1, 1))
 print(china.plot, vp = vplayout(1, 2))
-
 ```
 
 The above code produces the clear rendering of the hhi for microwave suppliers in the U.S. and China below. 
@@ -82,7 +80,7 @@ The above code produces the clear rendering of the hhi for microwave suppliers i
 
 Yet, due to the inflexibility of the `plot_hhi` function discussed above, such a side by side rendering does not make a great deal of sense especially given the different Y-axes for each country, suggesting wide variance in market competition. Per the previous suggestion, users may want to manually overlay the hhi trends over time for each country in a single plot. To do so, consider the following code continuing with this example.
 
-```{r }
+```R
 # First, make a new combined dataset
 year <- c(2012, 2013, 2014, 2015, 2016, 2017, 2012, 2013, 2014, 2015, 2016, 2017)
 country <- c("USA", "USA","USA","USA","USA","USA","China","China","China","China","China","China")
@@ -103,7 +101,6 @@ full.plot <- ggplot(hhi.data, aes(year, hhi, colour = Country)) +
   ggtitle("Comparing HHI Over Time, United States and China") +
   theme_bw()
 full.plot + theme(plot.title = element_text(hjust = 0.5))
-
 ```
 
 This code produces the much nicer, more intuitive comparison across hhi scores for the U.S. and China, calculated using the `hhi` function. The figure is below. Indeed, the figure shows that the competitiveness of the U.S. market is more than twice that of China's microwave manufacturing market.

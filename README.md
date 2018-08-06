@@ -55,7 +55,7 @@ Please cite the JOSS paper associated with the package using the TeX entry:
     journal={Journal of Open Source Software},<br/>
     year = {2018},<br/>
     volume={3},<br/>
-    number={28},<br/>
+    number={28, 828},<br/>
     note={DOI: 10.21105/joss.00828}
   }
 
@@ -63,6 +63,6 @@ Please cite the JOSS paper associated with the package using the TeX entry:
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 2. Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berkeley, CA: University of California Press.
 3. Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
-4. Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software, 3(28).
+4. Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software, 3(28), 828.
 
 Thanks and enjoy!

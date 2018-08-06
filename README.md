@@ -8,7 +8,7 @@
 
 The Herfindahl-Hirschman Index (HHI) is a widely used measure of concentration in a variety of fields including, business, economics, political science, finance, and others. Though intuitively simple to calculate (summed squared market shares of firms/actors in a single space), calculation of HHI can get onerous, especially as the number of firms/actors increases.
 
-Thus, the `hhi` package calculates the concentration of a market/space based on a vector of values corresponding with market shares of individual firms/actors. The packages is intended for simple, intuitive usage requiring the name of the data frame and the name of the vector (variable) corresponding with the market shares in quotation marks, placed directly in the function. Calling the function `hhi` will generate the HHI measure based on the values supplied to the function.
+Thus, the `hhi` package (Waggoner 2018) calculates the concentration of a market/space based on a vector of values corresponding with market shares of individual firms/actors. The packages is intended for simple, intuitive usage requiring the name of the data frame and the name of the vector (variable) corresponding with the market shares in quotation marks, placed directly in the function. Calling the function `hhi` will generate the HHI measure based on the values supplied to the function.
 
 Then, to visualize a time series of HHI values, there is a simple plotting function included, `plot_hhi`. Usage is similarly straightforward, requiring the name of the data frame, the name of the variable corresponding with the time indicator in quotation marks, and then the name of the variable corresponding with the market shares also in quotation marks. Leveraging `ggplot2`, the result is a visual rendering of the supplied vector of HHI values over the specified range of time. The function supports any measure of time, such as, years, quarters, months, etc.
 
@@ -47,18 +47,22 @@ plot_hhi(data, "year", "hhi")
 
 You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi). If you have any questions or find any bugs requiring fixing, please feel free to [contact me](http://www.philipdwaggoner.com/).
 
-Please cite the package using the TeX entry:
+Please cite the JOSS paper associated with the package using the TeX entry:
 
-@Manual{waggoner2018hhi,<br/>
-    title = {hhi: Calculate and Visualize the Herfindahl-Hirschman Index},<br/>
+@Manual{
+    title = {The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores},<br/>
     author = {Philip D. Waggoner},<br/>
+    journal={Journal of Open Source Software},<br/>
     year = {2018},<br/>
-    note = {R package version 1.1.0}<br/>
+    volume={3},<br/>
+    number={28},<br/>
+    note={DOI: 10.21105/joss.00828}
   }
 
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 2. Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berkeley, CA: University of California Press.
 3. Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
+4. Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software, 3(28).
 
 Thanks and enjoy!

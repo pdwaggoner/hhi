@@ -29,11 +29,11 @@ To see the `hhi` package in action, consider a brief tutorial using real market 
 install.packages("hhi")
 library(hhi)
 
-# Next, read in the .csv data file, "microwaves.csv" (Source: © Euromonitor International)
-microwaves <- read.csv(".../microwaves.csv") # Specify file path where .csv file is stored
+# Next, read in the .csv data file, "microwaves.csv" 
+microwaves <- read.csv(".../microwaves.csv") # Specify wd file path
 
 # Next, store all HHI scores for each year in the data
-# Note, for several years a warning message notes shares don't sum to 100 due to rounding
+# Note the warning message for a few years due to rounding
 usa.12 <- hhi(usa, "ms.2012")
 usa.13 <- hhi(usa, "ms.2013")
 usa.14 <- hhi(usa, "ms.2014")
@@ -41,7 +41,7 @@ usa.15 <- hhi(usa, "ms.2015")
 usa.16 <- hhi(usa, "ms.2016")
 usa.17 <- hhi(usa, "ms.2017")
 
-# Create a few objects to see fluctuation in the U.S. HHI from 2012-2017
+# Create a few objects to see fluctuation in the U.S. HHI, 2012-2017
 usa.hhi <- rbind(usa.12, usa.13, usa.14, usa.15, usa.16, usa.17)
 year <- c(2012, 2013, 2014, 2015, 2016, 2017)
 usa.hhi.data <- data.frame(year, usa.hhi)
@@ -56,7 +56,8 @@ china.15 <- hhi(china, "ms.2015")
 china.16 <- hhi(china, "ms.2016")
 china.17 <- hhi(china, "ms.2017")
 
-china.hhi <- rbind(china.12, china.13, china.14, china.15, china.16, china.17)
+china.hhi <- rbind(china.12, china.13, china.14, 
+                   china.15, china.16, china.17)
 year <- c(2012, 2013, 2014, 2015, 2016, 2017)
 china.hhi.data <- data.frame(year, china.hhi)
 china.plot <- plot_hhi(china.hhi.data, "year", "china.hhi")
@@ -76,14 +77,16 @@ print(china.plot, vp = vplayout(1, 2))
 
 The above code produces the clear rendering of the hhi for microwave suppliers in the U.S. and China below. 
 
-![here.](plot1.png)
+![HHI for U.S. and China, 2012-2017.](plot1.png)
 
 Yet, due to the inflexibility of the `plot_hhi` function discussed above, such a side by side rendering does not make a great deal of sense especially given the different Y-axes for each country, suggesting wide variance in market competition. Per the previous suggestion, users may want to manually overlay the hhi trends over time for each country in a single plot. To do so, consider the following code continuing with this example.
 
 ```R
 # First, make a new combined dataset
-year <- c(2012, 2013, 2014, 2015, 2016, 2017, 2012, 2013, 2014, 2015, 2016, 2017)
-country <- c("USA", "USA","USA","USA","USA","USA","China","China","China","China","China","China")
+year <- c(2012, 2013, 2014, 2015, 2016, 2017, 
+          2012, 2013, 2014, 2015, 2016, 2017)
+country <- c("USA", "USA","USA","USA","USA","USA",
+             "China","China","China","China","China","China")
 usa.hhi <- t(t(usa.hhi.data[,2]))
 china.hhi <- t(t(china.hhi.data[,2])) 
 hhi <- rbind(usa.hhi, china.hhi) 
@@ -105,7 +108,7 @@ full.plot + theme(plot.title = element_text(hjust = 0.5))
 
 This code produces the much nicer, more intuitive comparison across hhi scores for the U.S. and China, calculated using the `hhi` function. The figure is below. Indeed, the figure shows that the competitiveness of the U.S. market is more than twice that of China's microwave manufacturing market.
 
-![here.](plot2.png)
+![Comparison of U.S. China HHI, 2012-2017.](plot2.png)
 
 The `hhi` package can be downloaded and installed either directly from CRAN or the source code may be accessed freely at the corresponding GitHub repository along with all package documentation and an issue tracker.
 

@@ -50,14 +50,14 @@ You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi)
 Please cite the JOSS paper associated with the package using the TeX entry:
 
 @article{hhi2018,<br/>
-    title = {The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores},<br/>
-    author = {Philip D. Waggoner},<br/>
-    journal={Journal of Open Source Software},<br/>
-    year = {2018},<br/>
-    volume={3},<br/>
-    number={28, 828},<br/>
-    note={DOI: 10.21105/joss.00828}
-  }
+    &nbsp;&nbsp;title = {The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores},<br/>
+    &nbsp;&nbsp;author = {Philip D. Waggoner},<br/>
+    &nbsp;&nbsp;journal={Journal of Open Source Software},<br/>
+    &nbsp;&nbsp;year = {2018},<br/>
+    &nbsp;&nbsp;volume={3},<br/>
+    &nbsp;&nbsp;number={28, 828},<br/>
+    &nbsp;&nbsp;note={DOI: 10.21105/joss.00828}
+  &nbsp;&nbsp;}
 
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.

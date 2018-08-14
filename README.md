@@ -18,7 +18,7 @@ Note that `plot_hhi` is a relatively inflexible function meant for quick visual 
 
 Below are examples of the pair of functions in the package, including `hhi` to generate the measure, and then `plot_hhi` to plot a vector of HHI values over a specified period of time.
 
-```{r }
+```R
 
 install.packages("hhi")
 library(hhi)

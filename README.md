@@ -2,6 +2,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/hhi)](http://cran.r-project.org/package=hhi)
 [![DOI](http://joss.theoj.org/papers/10.21105/joss.00828/status.svg)](https://doi.org/10.21105/joss.00828)
 <!-- [![total](http://cranlogs.r-pkg.org/badges/grand-total/hhi)](http://cranlogs.r-pkg.org/)-->
+![](http://cranlogs.r-pkg.org/badges/grand-total/hhi)
 
 
 ## Why should I use `hhi`?

@@ -1,0 +1,23 @@
+---
+title: "NEWS.md"
+author: "Philip D. Waggoner"
+date: "8/16/2018"
+output: html_document
+---
+
+# `hhi` 1.2.0
+## Calculate and Visualize the Herfindahl-Hirschman Index
+
+### Changes
+
+* Added the Journal of Open Source Software citation for the paper associated with this package.
+
+* Streamlined a portion of the code for quicker and more efficient running.
+
+* Cleaned up the description.
+
+* Updated author affiliation.
+
+## How do I get `hhi `?
+
+The package is released on CRAN. If you have any questions or find any bugs requiring fixing, please feel free to contact me either directly (see the `DESCRIPTION` file for more) or by opening a ticket on GitHub. Thanks and enjoy!

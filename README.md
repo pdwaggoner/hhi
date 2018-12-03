@@ -44,7 +44,7 @@ plot_hhi(data, "year", "hhi")
 
 ```
 
-## How do I get `hhi `?
+## How do I get `hhi`?
 
 You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi). If you have any questions or find any bugs requiring fixing, feel free to open an issue ticket, pull request, or simply [contact me](http://www.philipdwaggoner.com/) if you would prefer.
 

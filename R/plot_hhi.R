@@ -26,10 +26,8 @@ plot_hhi <- function(x,t,h){
     stop("Package \"ggplot2\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-
   t <- x[ ,t]
   h <- x[ ,h]
-
   hhi.plot <- ggplot2::ggplot(x, ggplot2::aes(t, h)) +
     ggplot2::geom_point() +
     ggplot2::geom_line() +
@@ -37,7 +35,5 @@ plot_hhi <- function(x,t,h){
     ggplot2::ylab("Herfindahl-Hirschman Index") +
     ggplot2::ggtitle("Herfindahl-Hirschman Index Over Time") +
     ggplot2::theme_bw()
-
   return(hhi.plot)
-
 }

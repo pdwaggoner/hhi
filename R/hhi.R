@@ -32,6 +32,5 @@ hhi <- function(x, s){
     stop('vector "s" must contain only positive values')
 }
 hhi <- sum(d^2)
-  
   return(hhi)
 }

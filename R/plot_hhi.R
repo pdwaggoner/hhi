@@ -1,8 +1,7 @@
-## In Roxygen syntax -- update accordingly
-
 #' Plots a Herfindahl-Hirschman Index Time Series
 #'
 #' Generates a plot of a vector of Herfindahl-Hirschman Index (HHI) values over a period of time
+#'@inheritParams ggplot2::theme
 #'@usage plot_hhi(x, "t", "h")
 #'@param x Name of the data frame
 #'@param t Name of the vector (variable) from the data frame, x, corresponding with a measure of time (year, month, etc.)

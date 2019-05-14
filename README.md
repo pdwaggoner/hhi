@@ -15,6 +15,21 @@ Then, to visualize a time series of HHI values, there is a simple plotting funct
 
 Note that `plot_hhi` is a relatively inflexible function meant for quick visual rendering of a vector of HHI values over a period of time. Users are advised to generate original plots with other plotting functions and packages beyond `hhi` to allow for greater flexibility in customizing visual output according to specific needs.
 
+## Access
+
+For the most recent dev version:
+
+```{R}
+devtools::install_github('pdwaggoner/hhi')
+```
+
+For the latest stable version (on [CRAN](https://CRAN.R-project.org/package=hhi)):
+
+```{R}
+install.packages("hhi")
+library(hhi)
+```
+
 ## How do I use `hhi`?
 
 Below are examples of the pair of functions in the package, including `hhi` to generate the measure, and then `plot_hhi` to plot a vector of HHI values over a specified period of time.
@@ -41,12 +56,11 @@ data <- data.frame(hhi, year) # combine into a data frame
 
 # Now plot the HHI by year over time using the "plot_hhi" command
 plot_hhi(data, "year", "hhi")
-
 ```
 
-## How do I get `hhi`?
+## Reporting and Issues
 
-You can download the package from [CRAN](https://CRAN.R-project.org/package=hhi). If you have any questions or find any bugs requiring fixing, feel free to open an issue ticket, pull request, or simply [contact me](http://www.philipdwaggoner.com/) if you would prefer.
+If you have any questions or find any bugs requiring fixing, feel free to open an issue, pull request, or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.
 
 Please cite the JOSS paper associated with the package using the TeX entry:
 
@@ -66,4 +80,4 @@ Please cite the JOSS paper associated with the package using the TeX entry:
 3. Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
 4. Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software, 3(28), 828.
 
-Thanks and enjoy!
+Thanks!

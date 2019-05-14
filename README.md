@@ -34,6 +34,7 @@ library(hhi)
 
 `hhi` has two main functions: `hhi` and `plot_hhi`. Below are examples of each, starting with `hhi`, which calculates HHI scores,and then `plot_hhi`, which plots a vector of HHI scores over a specified period of time.
 
+#### First `hhi`
 ```{R}
 install.packages("hhi")
 library(hhi)

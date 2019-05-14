@@ -57,6 +57,25 @@ data <- data.frame(hhi, year) # combine into a data frame
 plot_hhi(data, "year", "hhi")
 ```
 
+#### Customizing `plot_hhi`
+```{R}
+# First, create a time series of fake HHI scores
+hhi <- c(45,60,50,100,94,15,88,200,215,68,47,62,52,102,96,17,90,202,217,70)
+year <-c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009)
+data <- data.frame(hhi, year) # combine into a data frame
+
+# Customize a `plot_hhi` object
+library(ggplot2)
+
+# Update theme and axis labels to overwrite default values
+plot_hhi(data, "year", "hhi") + 
+  theme_classic() + 
+  labs(x = "Time (Years)", 
+       y = "HHI Scores", 
+       title = "HHI by Year", 
+       subtitle = "Built via the 'hhi' Package")
+```
+
 ## Reporting and Issues
 
 If you have any questions or find any bugs requiring fixing, feel free to open an issue, pull request, or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.

@@ -34,7 +34,7 @@ library(hhi)
 
 `hhi` has two main functions: `hhi` and `plot_hhi`. Below are examples of each, starting with `hhi`, which calculates HHI scores,and then `plot_hhi`, which plots a vector of HHI scores over a specified period of time.
 
-#### First `hhi`
+#### `hhi`
 ```{R}
 install.packages("hhi")
 library(hhi)
@@ -44,17 +44,18 @@ a <- c(1,2,3,4) # firm id
 b <- c(20,30,40,10) # market share of each firm (should total 100% of market share)
 x <- data.frame(a,b) # df
 
-# Call hhi to calculate the HHI based on the vector of market share values in object b in data frame x
+# Calculate the HHI scores based on the vector of market share values in object b in data frame x
 hhi(x, "b")
+```
 
-# Plot a time series of fictitious HHI values
-hhi <- c(45,60,50,100,94,15,88,200,215,68,
-47,62,52,102,96,17,90,202,217,70) # create a vector of HHI values by year
-year <-c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,
-2000,2001,2002,2003,2004,2005,2006,2007,2008,2009) # create a vector of corresponding years
+#### `plot_hhi`
+```{R}
+# First, create a time series of fake HHI scores
+hhi <- c(45,60,50,100,94,15,88,200,215,68,47,62,52,102,96,17,90,202,217,70)
+year <-c(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009)
 data <- data.frame(hhi, year) # combine into a data frame
 
-# Now plot the HHI by year over time using the "plot_hhi" command
+# Now plot the HHI by year over time
 plot_hhi(data, "year", "hhi")
 ```
 

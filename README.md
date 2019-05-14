@@ -32,10 +32,9 @@ library(hhi)
 
 ## How do I use `hhi`?
 
-Below are examples of the pair of functions in the package, including `hhi` to generate the measure, and then `plot_hhi` to plot a vector of HHI values over a specified period of time.
+`hhi` has two main functions: `hhi` and `plot_hhi`. Below are examples of each, starting with `hhi`, which calculates HHI scores,and then `plot_hhi`, which plots a vector of HHI scores over a specified period of time.
 
 ```{R}
-
 install.packages("hhi")
 library(hhi)
 

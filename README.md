@@ -1,4 +1,4 @@
-# `hhi` An R Package to Calculate and Visualize the Herfindahl-Hirschman Index
+# `hhi` An R Package to Calculate & Visualize the Herfindahl-Hirschman Index
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/hhi)](http://cran.r-project.org/package=hhi)
 [![DOI](http://joss.theoj.org/papers/10.21105/joss.00828/status.svg)](https://doi.org/10.21105/joss.00828)
 [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/hhi)](http://cranlogs.r-pkg.org/)
@@ -9,9 +9,9 @@
 
 The Herfindahl-Hirschman Index (HHI) is a widely used measure of concentration in a variety of fields including, business, economics, political science, finance, and others. Though intuitively simple to calculate (summed squared market shares of firms/actors in a single space), calculation of HHI can get onerous, especially as the number of firms/actors increases.
 
-Thus, the `hhi` package calculates the concentration of a market/space based on a vector of values corresponding with market shares of individual firms/actors. The packages is intended for simple, intuitive usage requiring the name of the data frame and the name of the vector (variable) corresponding with the market shares in quotation marks, placed directly in the function. Calling the function `hhi` will generate the HHI measure based on the values supplied to the function.
+The `hhi` package calculates the concentration of a market/space based on a vector of values corresponding with market shares of individual firms/actors. The packages is intended for simple, intuitive usage requiring the name of the data frame and the name of the vector (variable) corresponding with the market shares in quotation marks, placed directly in the function. Calling the function `hhi` will generate the HHI measure based on the values supplied to the function.
 
-Then, to visualize a time series of HHI values, there is a simple plotting function included, `plot_hhi`. Usage is similarly straightforward, requiring the name of the data frame, the name of the variable corresponding with the time indicator in quotation marks, and then the name of the variable corresponding with the market shares also in quotation marks. Leveraging `ggplot2`, the result is a visual rendering of the supplied vector of HHI values over the specified range of time. The function supports any measure of time, such as, years, quarters, months, etc.
+To visualize a time series of HHI values, `hhi` includes a simple plotting function, `plot_hhi`. Usage is similarly straightforward, requiring the name of the data frame, the name of the variable corresponding with the time indicator in quotation marks, and then the name of the variable corresponding with the market shares also in quotation marks. Leveraging `ggplot2`, the result is a visual rendering of the supplied vector of HHI values over the specified range of time. The function supports any measure of time, such as, years, quarters, months, etc.
 
 Note that `plot_hhi` is a relatively inflexible function meant for quick visual rendering of a vector of HHI values over a period of time. Users are advised to generate original plots with other plotting functions and packages beyond `hhi` to allow for greater flexibility in customizing visual output according to specific needs.
 

@@ -13,7 +13,7 @@ The `hhi` package calculates the concentration of a market/space based on a vect
 
 To visualize a time series of HHI values, `hhi` includes a simple plotting function, `plot_hhi`. Usage is similarly straightforward, requiring the name of the data frame, the name of the variable corresponding with the time indicator in quotation marks, and then the name of the variable corresponding with the market shares also in quotation marks. Leveraging `ggplot2`, the result is a visual rendering of the supplied vector of HHI values over the specified range of time. The function supports any measure of time, such as, years, quarters, months, etc. Importantly, as `ggplot2` is used, users can overwrite the default values (e.g., axis titles and `theme_*`) with traditional `ggplot2` syntax. See this extension in the example below.
 
-## Access
+## Installation
 
 For the most recent dev version:
 

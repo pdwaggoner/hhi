@@ -76,7 +76,7 @@ plot_hhi(data, "year", "hhi") +
        subtitle = "Built via the 'hhi' Package")
 ```
 
-## Reporting and Issues
+## Contact, Citing and Issues
 
 If you have any questions or find any bugs requiring fixing, feel free to open an issue, pull request, or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.
 
@@ -97,5 +97,3 @@ Please cite the JOSS paper associated with the package using the TeX entry:
 2. Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berkeley, CA: University of California Press.
 3. Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
 4. Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software, 3(28), 828.
-
-Thanks!

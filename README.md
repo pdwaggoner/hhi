@@ -5,7 +5,6 @@
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/hhi)](http://www.r-pkg.org/pkg/hhi)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/pdwaggoner/hhi/pulls)
 [![Documentation](https://img.shields.io/badge/documentation-hhi-orange.svg?colorB=E91E63)](https://www.r-pkg.org/pkg/hhi)
-[![Features](https://img.shields.io/badge/features-hhi-orange.svg?colorB=2196F3)](https://joss.theoj.org/papers/10.21105/joss.00828)
 
 ## Why should I use `hhi`?
 

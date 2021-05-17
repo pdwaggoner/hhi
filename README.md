@@ -81,7 +81,7 @@ plot_hhi(data, "year", "hhi") +
 
 If you have any questions or find any bugs requiring fixing, feel free to open an [issue](https://github.com/pdwaggoner/hhi/issues), [pull request](https://github.com/pdwaggoner/hhi/pulls), or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.
 
-Please cite the JOSS paper associated with the package using the TeX entry:
+Please cite the [JOSS paper](https://joss.theoj.org/papers/10.21105/joss.00828) associated with the package using the TeX entry:
 
 @article{hhi2018,<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores},<br/>

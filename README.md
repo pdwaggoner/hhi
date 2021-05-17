@@ -79,7 +79,7 @@ plot_hhi(data, "year", "hhi") +
 
 ## Contact, Citing and Issues
 
-If you have any questions or find any bugs requiring fixing, feel free to open an issue, pull request, or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.
+If you have any questions or find any bugs requiring fixing, feel free to open an [issue](https://github.com/pdwaggoner/hhi/issues), [pull request](https://github.com/pdwaggoner/hhi/pulls), or simply [contact me](https://pdwaggoner.github.io/) if you would prefer.
 
 Please cite the JOSS paper associated with the package using the TeX entry:
 
